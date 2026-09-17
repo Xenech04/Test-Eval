@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+/* Liquid Glass styling */
+.liquid-glass-header {
+  position: relative;
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.14), inset 0 1px 0 0 rgba(255, 255, 255, 0.35);
+}
+
+.liquid-glass-card {
+  position: relative;
+  backdrop-filter: blur(20px) saturate(170%);
+  -webkit-backdrop-filter: blur(20px) saturate(170%);
+  background-color: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.05), inset 0 1px 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.liquid-glass-bubble {
+  backdrop-filter: blur(24px) saturate(190%);
+  -webkit-backdrop-filter: blur(24px) saturate(190%);
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 12px 36px -4px rgba(0, 0, 0, 0.16), inset 0 1px 1px 0 rgba(255, 255, 255, 0.95);
+}
+
+/* Celestial Aesthetic luminous hover effects on cards and controls */
+.celestial-card {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.celestial-card:hover {
+  box-shadow: 0 14px 40px -6px rgba(125, 211, 252, 0.28), 0 0 24px 2px rgba(186, 230, 253, 0.25);
+  border-color: rgba(147, 197, 253, 0.7);
+  transform: translateY(-2px);
+}
+
+.celestial-interactive {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.celestial-interactive:hover {
+  box-shadow: 0 0 20px 2px rgba(147, 197, 253, 0.4);
+}
+
+.celestial-row {
+  transition: all 0.2s ease-out;
+}
+.celestial-row:hover {
+  box-shadow: 0 8px 30px -4px rgba(125, 211, 252, 0.22);
+  border-color: rgba(147, 197, 253, 0.6);
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+@media print {
+  header, nav, footer, button, .print\:hidden {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+}
+

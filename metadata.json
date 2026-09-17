@@ -1,0 +1,6 @@
+{
+  "name": "CONCENTRIX",
+  "description": "Plateforme d'évaluation et de pilotage de la performance des Managers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
